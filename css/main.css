@@ -1,0 +1,47 @@
+body { 
+	background: #fff;
+	}
+
+h1, h3, p {
+	text-align: center;
+	color: black;
+}
+
+.instructions, .grocerylist, .cart {
+	background-color: green;
+	width: 30em;
+	margin: 0 auto;
+}
+
+
+.cart {
+	height: 30em;
+	background-image: url("../img/cart.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+form {
+	text-align: center;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  clear:both;
+  list-style:none;
+}
+
+button {
+  background: orange;
+  border: 0px;
+  color: black;
+  font-size: 15px;
+  width: 100px;
+  margin: 10px 0 0;
+  cursor: pointer;
+}
