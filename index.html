@@ -3,8 +3,8 @@
     <head>
         <title>My Shopping List</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+		<script src="js/app.js"></script>
     </head>
 <body>
 	<div class="instructions">
@@ -16,17 +16,17 @@
 			<form name ="grocerylist">
 				 <p>I need...</p> 
 				 	<input id="new-item" type="text" name="submitText" placeholder= "+ New Items">
+						<button class="submit">Submit!</button>	
 			</form>
 	</div>	
 	
 	<div class="cart">
 		<h3> Here's my list: </h3>
-			<form name="need-to-buy">
-				<ul>
-					<li> <input type="text" id="list-items" name"ListItem">
-							<button class="gotIt">Got It!</button><button class="nevermind">Nevermind </button>
+				<ul id="shopping items">
+					<li> <input type="text" id="list-items" name="ListItem">
+							<button class="gotIt" type= "checkbox">Got It!</button>
+							<button class="nevermind" type= "checkbox">Nevermind </button>
 					</li>
-				</form>
 			</ul>
 	</div>		
 </body>
