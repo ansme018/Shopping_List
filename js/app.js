@@ -28,8 +28,7 @@ $(document).ready(function () {
 
 //2.  When user locates item on shopping trip or "gets it"
 	//Text is crossed off and changes color
-	$('.gotIt button .submit').on("change", "input:checkbox:", function(event) {
-		event.preventDefault();
+	$('#list-items').on("click", '.gotIt', "input:checkbox:", function() {
 		var item=$(this).closest("li").find("span");
 			if($(this).is(":checked")) {
 				item.addClass("gotIt");
@@ -47,8 +46,8 @@ $(document).ready(function () {
 
 
 //4. User realizes he/she already has the item.  Needs to delete an item
- 	$('.nevermind button .submit').on('click', function(event) {
+ 	$('#list-items').on('click', ".nevermind", function() {
  		$(this).parent().remove(); 
- })
+ });
 
 });
